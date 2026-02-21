@@ -1,0 +1,171 @@
+/* ── Navbar ── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e8ebe8;
+  padding: 0 40px;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e4d35;
+  letter-spacing: -0.2px;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1e4d35;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #d0d5d0;
+  color: #555;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.logout-btn:hover {
+  border-color: #b00;
+  color: #b00;
+  background-color: #fff5f5;
+}
+
+/* ── Page layout ── */
+.page-content {
+  max-width: 860px;
+  margin: 48px auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Welcome banner ── */
+.welcome-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2d8a55;
+  margin-bottom: 6px;
+}
+
+.welcome-heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.3px;
+}
+
+.status-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #edf7f1;
+  border: 1px solid #c3e6d1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1e6640;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #2d8a55;
+}
+
+/* ── Card ── */
+.card {
+  background: #fff;
+  border: 1px solid #e8ebe8;
+  border-radius: 10px;
+  padding: 28px 32px;
+}
+
+.card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* ── Detail grid ── */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f2f0;
+}
+
+.detail-item:nth-child(odd) {
+  padding-right: 32px;
+  border-right: 1px solid #f0f2f0;
+}
+
+.detail-item:nth-child(even) {
+  padding-left: 32px;
+}
+
+.detail-item:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-size: 0.78rem;
+  color: #999;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
